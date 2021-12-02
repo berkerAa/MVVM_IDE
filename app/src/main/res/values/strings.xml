@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">AutonomTest</string>
+    <string name="app_name">Depo_Ortak_After_Yagmur</string>
+    <string name="textview_register_screen_kvk_info">''Kayıt Ol'' butonuna basarak <u>Üyelik Sözleşmesi </u>'ni ve \n
+        <u>KVKK Politikası </u>'nı okuyup kabul ettiğinizi onaylıyorsunuz.</string>
+    <string name="textview_register_screen_login">Kayıt Ol</string>
+    <string name="textview_register_screen_have_an_Account">Zaten bir hesabın var mı?</string>
+    <string name="textview_register_screen_sign_up"><u>Giriş Yap</u></string>
+    <string name="textview_popup_messagge_this_area_cannot_be_null">*Bu alan boş bırakılamaz.</string>
 </resources>
