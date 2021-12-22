@@ -1,6 +1,7 @@
 package com.example.autonomtest.src.user_logic
 
 import android.os.Bundle
+import com.example.autonomtest.R
 import com.example.autonomtest.app_modules.bridge.Bridge
 import com.example.autonomtest.core.base.ApplicationGraph
 import com.example.autonomtest.src.user_logic.di.UserComponent
@@ -14,6 +15,7 @@ class UserBridge: Bridge<UserComponent, UserNavigationStatus>() {
         component = (application as ApplicationGraph).applicationGraphComponent.userComponent().create()
         component.inject(this)
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
         startNavigation { LoginPresenter() }
     }
 }

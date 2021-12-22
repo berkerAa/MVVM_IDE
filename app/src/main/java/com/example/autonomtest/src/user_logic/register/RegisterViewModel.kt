@@ -26,7 +26,7 @@ fun onRegister(registerModel: RegisterModel): Observable<RegisterStatus>
                 when(status.status)
                 {
 			  10001 -> RegisterRegisterSuccessful(status.data)
-			  20001 -> RegisterUnmatchede-mail(status.data)
+			  20001 -> RegisterUnmatchede_mail(status.data)
 			  30001 -> RegisterControllerError(status.data)
 			  else -> RegisterObservableErrorStatus(status.data)
                     

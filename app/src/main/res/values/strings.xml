@@ -1,3 +1,328 @@
 <resources>
-    <string name="app_name">AutonomTest</string>
+    <string name="app_name">Depo Ortak</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="depo_ortak_welcome_text">Merhaba</string>
+    <string name="depo_ortak_welcome_screen_text">Geleceğin depoculuk deneyiminin bir parçası olmanıza\nsadece bir adım kaldı.\n\n
+        Deportak ile birlikte yeni nesil paylaşımlı depoculuğun yerel\n
+
+        temsilcisi olacaksınız.\n\n
+
+        Her türlü butik endüstriyel\n ticari\n e-ticaret depolama\n
+
+        ihtiyacı olanlar konum-tabanlı, gerçek-zamanlı olarak sizden\n
+
+        ve hizmetlerinizden haberdar olabileceklerdir.\n\n
+
+        Deponuzun özelliklerini ve donanımlarınızı tanımlayın,\n
+
+        depolama ihtiyacı olanlar size anında ulaşsınlar.\n
+
+        Hizmetleriniz deportak ile herkese erişebilsin.</string>
+
+    <string name="depo_ortak_location_screen_text">Deponuz nerede bulunuyor?</string>
+    <string name="Next_button_text">DEVAM</string>
+    <string name="back_button_Text">GERİ</string>
+    <string name="Third_page_text">İletişim Kurulacak Kişiler</string>
+    <string name="textview_isim">İsim</string>
+    <string name="textview_soyisim">Soyisim</string>
+    <string name="textview_bildigi_yabanci_diller">Bildiği Yabancı Diller</string>
+    <string name="textview_telefon">Telefon</string>
+    <string name="textview_email">..E-Mail Adresi</string>
+    <string name="textview_second_person">2.Kişiyi Ekle</string>
+    <string name="checkbox">Çalışılmıyor</string>
+    <string name="textview_depo_teknik">Depo teknik özellikleri</string>
+    <string name="textview_depo_teknik_arac_sayisi">Aynı anda kaç tır, kamyon, kamyonet yanaşabilir?</string>
+    <string name="textview_depo_teknik_uygunluk">Rampalar ve kapılar, kamyon, kamyonet, konteyner \n yükleme ve boşaltma için uygun mu?</string>
+    <string name="textview_depo_teknik_cross_dock">Cross Dock operasyonuna uygun mu?</string>
+    <string name="textview_serifikalar">Sertifikalar</string>
+    <string name="textview_saglanan_imkanlar">Sağlanan imkanlar</string>
+    <string name="textview_seciniz">Seçiniz</string>
+    <string name="textview_other">Diğer</string>
+    <string name="kayit_succsess_button_text">TAMAMLA</string>
+    <string name="textview_iletisime_geciniz">Gerekli durumlarda iletişim için tıklayın.</string>
+    <string name="textview_password">..Şifre</string>
+    <string name="checkbox_remember_me">Oturumu Açık Tut</string>
+    <string name="textview_forgot_password"><u>Şifremi Unuttum</u></string>
+    <string name="button_giris_yap">Giriş Yap</string>
+    <string name="register_button_text">Kayıt Ol</string>
+    <string name="textview_password_again">Şifre Tekrar</string>
+    <string name="textview_request_email_Screen">Hesabını Doğrula</string>
+    <string name="button_request_email">Gönder</string>
+    <string name="verify_code_textview_button">Doğrula</string>
+    <string name="verify_code_textview">Doğrulama kodunu giriniz: </string>
+    <string name="textview_reset_password">   Şifreyi Yenile</string>
+    <string name="reset_password_button_textview">YENİLE</string>
+    <string name="reset_password_new_password_textview">Yeni Şifre</string>
+    <string name="reset">Şifre Değiştir</string>
+    <string name="register_login">Kayıt Ol</string>
+    <string name="textview_register_screen_login">Kayıt Ol</string>
+    <string name="textview_register_screen_have_an_Account">Zaten bir hesaba sahip misin?</string>
+    <string name="textview_register_screen_sign_up"><u>Giriş Yap</u></string>
+    <string name="textview_popup_messagge_this_area_cannot_be_null">*Bu alan boş bırakılamaz.</string>
+    <string name="tw_ac_user_login_create_an_account"><u> Hesap oluştur</u></string>
+    <string name="tw_ac_user_login_create_an_account_2">Henüz bir hesabın yok mu?</string>
+    <string name="tw_ac_user_logim_wrong_popup_message">*e-posta ya da şifre hatalı</string>
+    <string name="tw_ac_user_registration_req_ac_info">Kayıt talebiniz başarıyla oluşturuldu.\nLütfen mailinize gönderilen link ile \n  kaydınızı tamamlayınız</string>
+    <string name="tw_ac_us_reg_req_ac_button_tw"><u>Ana Sayfaya Git</u></string>
+    <string name="tw_ac_us_verification_layout_button_text">Gönder</string>
+    <string name="tw_ac_us_code_layout_6_hane_text">6 Haneli kodu girin</string>
+    <string name="tw_ac_us_code_lay_popup_message">*Lütfen geçerli bir doğrulama kodu giriniz</string>
+    <string name="tw_ac_us_changepassword_popup_message">*Yeni şifreniz bir önceki şifrenizden farklı olmalıdır</string>
+    <string name="tw_ac_us_register_layout_kvk_info_message"> Kayıt Ol butonuna basarak Üyelik Sözleşmesini ve KVKK Politikasını okuyup kabul ettiğinizi onaylıyorsunuz.</string>
+    <string name="tw_ac_user_login_layout_verification_popup_message_error">Lütfen mailinize gönderilen link ile kaydınızı tamamlayınız.</string>
+    <string name="tw_ac_user_login_layout_activation_message_popup">Aktivasyon Mailini Tekrar Gönder</string>
+    <string name="tw_ac_user_login_layout_activation_mail_was_send">Aktivasyon maili gönderildi.</string>
+    <string name="tw_ac_user_login_layout_butun_alanlari_doldurunuz">Lütfen tüm alanları doldurunuz.</string>
+    <string name="tw_ac_us_welcome_layout_discount">HIZLI. \n YENİLİKÇİ. \n ERİŞİLEBİLİR.</string>
+
+    <string name="monday">Pazartesi</string>
+    <string name="tuesday">Salı</string>
+    <string name="wednesday">Çarşamba</string>
+    <string name="thursday">Perşembe</string>
+    <string name="friday">Cuma</string>
+    <string name="saturday">Cumartesi</string>
+    <string name="sunday">Pazar</string>
+
+    <string name="dummy"><font color="GREEN">Açık</font>\t\t\t Kapanış Saati 18:00</string>
+
+
+    <plurals name="review_count">
+        <item quantity="other">%d Değerlendirme.</item>
+    </plurals>
+
+    <plurals name="price">
+        <item quantity="other">%d₺</item>
+    </plurals>
+
+    <plurals name="image_count">
+        <item quantity="other">%d/%d</item>
+    </plurals>
+
+    <plurals name="rating">
+        <item quantity="other">%.2f (%d Değerlendirme)</item>
+    </plurals>
+
+    <plurals name="isWorking">
+        <item quantity="one"><font color="GREEN">Açık</font> Kapanış Saati %d:%d</item>
+    </plurals>
+
+    <string name="storage">Depolama</string>
+    <string name="date">Tarih</string>
+    <string name="storage_type">Alan Türü</string>
+    <string name="size">Büyüklük</string>
+    <string name="service">Hizmet</string>
+    <string name="more">Daha Fazla</string>
+    <string name="save_filter">Filtreyi Kaydet</string>
+    <string name="harmony">Uyumluluk Puanı</string>
+    <string name="daily_price">/Palet Gün</string>
+    <string name="price_holder">250₺</string>
+    <string name="stocking_price">Stoklama Fiyatı</string>
+    <string name="handlein_price">Elleçleme in</string>
+    <string name="handleout_price">Elleçleme out</string>
+    <string name="hesapla_button">Hesapla &amp; Rezerve Et</string>
+    <string name="location_specify">Adres Tercihi Yapın</string>
+
+    <string-array name="sp_category">
+        <item>İstanbul</item>
+        <item>İzmir</item>
+        <item>Ardahan</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+    <string-array name="sp_category2">
+        <item>Türkçe</item>
+        <item>İngilizce</item>
+    </string-array>
+
+
+    <string-array name="saglanan_imkanlar">
+        <item>7/24 Hizmet</item>
+        <item>Ofis</item>
+        <item>Yemek</item>
+        <item>Doktor</item>
+        <item>Otomobil Park Alanı</item>
+    </string-array>
+    <string-array name="hizmet_sektorler">
+        <item>Otomotiv Yedek Parça</item>
+        <item>Hazır Giyim</item>
+        <item>Gıda</item>
+        <item>Dayanıklı Tüketim (Elektronik ve Beyaz Eşya)</item>
+        <item>Hızlı Tüketim</item>
+        <item>İlaç</item>
+        <item>Paketli veya Varilli Kimyasal</item>
+        <item>Paketli Kimyasal (Tehlikeli)</item>
+        <item>Dökme Kimyasal (Tehlikeli)</item>
+        <item>Dökme Kimyasal</item>
+        <item>E-Ticaret</item>
+        <item>Metal</item>
+        <item>Alkol ve Tütün</item>
+        <item>Alkolsüz İçecek</item>
+        <item>Tarım Ürünleri (Tahıl,Hububat,Bakliyat vs.)</item>
+        <item>Maden,Kömür,vs.</item>
+        <item>Gaz,Petrol,vs.</item>
+        <item>Endüstriyel Ürünler</item>
+    </string-array>
+
+
+    <string-array name="Eticaret">
+        <item>Amazon</item>
+        <item>Hepsiburada</item>
+        <item>Trendyol</item>
+        <item>N11</item>
+        <item>Gittigidiyor</item>
+        <item>PTTAVM</item>
+    </string-array>
+
+
+    <string-array name="temel_hizmetler">
+        <item>20"'"lık Konteyner Tahliye ve Yükleme</item>
+        <item>40"'"lık Konteyner Tahliye ve Yükleme</item>
+        <item>Mal Kabul (Araçtan indirme ve kontrol)</item>
+        <item>Stok Yerine Koyma (Raf, zemin, mezzanine vb.)</item>
+        <item>Toplama (Palet, kutu, adet)</item>
+        <item>Paketleme (Adetleri kutuya koyma)</item>
+        <item>Paletleme (Kutuları palete dizme)</item>
+        <item>Palet Streçleme</item>
+        <item>Palet Shrinkleme</item>
+        <item>Palet Çemberleme</item>
+        <item>Sevkiyat (Kontrol ve araca yükleme)</item>
+        <item>Dökümantasyon (İrsaliye, fatura, ihracat vb.)</item>
+        <item>İade Kabul ve Kontrol</item>
+        <item>İade İçin Karantina ve Hurda</item>
+        <item>Atık Yönetim</item>
+        <item>Sayım</item>
+    </string-array>
+
+    <string-array name="Katma_degerli_hizmetler">
+        <item>Etiketleme</item>
+        <item>Kutu Ambalajlama</item>
+        <item>Kitting</item>
+        <item>Kalite Kontrol</item>
+        <item>Ütüleme</item>
+        <item>Light Assembly (Basit montaj)</item>
+        <item>Kutu Shrinkleme</item>
+        <item>Kullanım Kılavuzu Koyma</item>
+        <item>Paketleme Malzemesi Satın Alım</item>
+        <item>Palet Satın Alımı</item>
+        <item>Kırık Palet Tamiri</item>
+    </string-array>
+
+    <string-array name="Guvenlik_Hizmetleri">
+        <item>CCTV (Ofis)</item>
+        <item>CCTV (Depo)</item>
+        <item>CCTV (Bina)</item>
+        <item>Kartlı Giriş ve Çıkış (Ofisler)</item>
+        <item>Kartlı Giriş ve Çıkış (Depo Alanı)</item>
+        <item>Kartlı Giriş ve Çıkış (Bina)</item>
+        <item>Hırsız Alarmı (Ofis)</item>
+        <item>Hırsız Alarmı (Depo)</item>
+        <item>Hırsız Alarmı (Bina)</item>
+        <item>Tel Çit ile Binayı Çevreleme</item>
+        <item>Duvar Çit ile Binayı Çevreleme</item>
+        <item>Güvenlik Personeli 7/24</item>
+        <item>Pest Control</item>
+        <item>Sigorta</item>
+    </string-array>
+    <string-array name="Yangın_Hizmetleri">
+        <item>Alev Dedektörü (Ofis)</item>
+        <item>Alev Dedektörü (Depo)</item>
+        <item>Duman Dedektörü (Ofis)</item>
+        <item>Duman Dedektörü (Depo)</item>
+        <item>Otomatik Söndürme-Sprinkler (Ofis)</item>
+        <item>Otomatik Söndürme-Sprinkler (Depo)</item>
+        <item>Otomatik Söndürme-Sprinkler (Raf)</item>
+        <item>Otomatik Söndürme-Gazlı (Depo)</item>
+        <item>Yangın Söndürme Tüpleri (Ofis)</item>
+        <item>Yangın Söndürme Tüpleri (Depo)</item>
+        <item>Yangın Dolapları (Ofis)</item>
+        <item>Yangın Dolapları (Depo)</item>
+        <item>Duman Tahliye Sistemleri (Ofis)</item>
+        <item>Duman Tahliye Sistemleri (Depo)</item>
+        <item>Tahliye Çıkış Yolları (Ofis)</item>
+        <item>Tahliye Çıkış Yolları (Depo)</item>
+        <item>Acil Aydınlatma (Ofis)</item>
+        <item>Acil Aydınlatma (Depo)</item>
+        <item>Merdiven Havalandırma</item>
+    </string-array>
+
+
+    <string-array name="Kullanilan_Ekipmanlar">
+        <item>Forklift</item>
+        <item>Reach Truck</item>
+        <item>Turret Truck</item>
+        <item>Streç Makinesi</item>
+        <item>Shrink Makinesi</item>
+        <item>Çember Makinesi</item>
+        <item>AS/RS</item>
+        <item>Konveyör</item>
+        <item>Sorter</item>
+        <item>Mobil Yükleme Rampası</item>
+        <item>Kantar (Araç tartımı)</item>
+        <item>Yük Platformu (Makaslı)</item>
+        <item>Konteyner İstfileyici</item>
+        <item>Dock Levener (Hidrolik)</item>
+        <item>Dock Levener (Mekanik)</item>
+        <item>Endüstriyel Tartı (Palet ağırlığı vs. ölçüm)</item>
+        <item>Nem Ölçer (Depo)</item>
+    </string-array>
+
+    <string-array name="Teknoloji">
+        <item>WMS</item>
+        <item>RF Terminalleri</item>
+        <item>Barkod Yazıcılar</item>
+        <item>VMI</item>
+        <item>EDI</item>
+        <item>Bulut Sistemi</item>
+    </string-array>
+
+
+    <string-array name="sertificate_list">
+        <item>ISO 9001</item>
+        <item>ISO 22000 (Gıda güvenliği)</item>
+        <item>ISO 14001 Çevre Yönetim</item>
+        <item>ISO 45001 İş Sağlığı ve Güvenliği</item>
+        <item>ISO 10002 Müşteri Memnuniyeti</item>
+        <item>ISO 27001 Bilgi Güvenliği</item>
+        <item>ISO 22301 İş Sürekliliği</item>
+        <item>ISO TS 13027 Hijyen ve Sanitasyon</item>
+        <item>ISO 28000 Tedarik Zinciri Güvenlik</item>
+        <item>ISO EN 15593 Gıda Paketleme</item>
+        <item>ADR Uyum</item>
+        <item>Hazmat</item>
+        <item>AEO (Yetkilendirilmiş yükümlü)</item>
+        <item>TAPA</item>
+        <item>HACCP</item>
+        <item>ECOCERT (Organik ürün depolama)</item>
+        <item>GDP (Good distirbution practice)</item>
+        <item>AIB (Gıda)</item>
+        <item>IFS (Int. Featured Std. Food)</item>
+        <item>BRCGS (Gıda,İngiliz)</item>
+        <item>C-TPAT</item>
+    </string-array>
+
+    <string-array name="Stoklama_Depolama_imkanları">
+        <item>Açık Alan (Depolama)</item>
+        <item>Açık Alan (Konteyner istifleme)</item>
+        <item>Açık Alan (İş makinesi)</item>
+        <item>Kapalı Alan (Depolama)</item>
+        <item>Sundurma (Depolama)</item>
+        <item>A Tipi Gümrüklü Açık Alan</item>
+        <item>A Tipi Gümrüklü Kapalı Alan</item>
+        <item>Geçici Depolama Açık</item>
+        <item>Geçici Depolama Kapalı</item>
+        <item>Zemin Depolama Alanı</item>
+        <item>Zemin Depolama (Palet)</item>
+        <item>Mezannine Alan (Toplama modülü)</item>
+        <item>Grade Level Loading</item>
+        <item>Yanıcı Ürün Dolapları</item>
+        <item>Yanıcı Madde Alanı</item>
+        <item>Güvenlikli Oda veya Kafesli Alan</item>
+        <item>Silo Depolama (Tahul, hububat, bakliyat)</item>
+        <item>Tank Depolama</item>
+
+    </string-array>
 </resources>

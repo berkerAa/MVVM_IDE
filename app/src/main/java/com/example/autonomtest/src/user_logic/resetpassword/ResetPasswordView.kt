@@ -1,6 +1,7 @@
 package com.example.autonomtest.src.user_logic.resetpassword
 
 import android.view.View
+import com.example.autonomtest.R
 import com.example.autonomtest.app_modules.view_binding.ViewBinding
 import com.example.autonomtest.src.user_logic.model.ResetPasswordModel
 import javax.inject.Inject
@@ -13,6 +14,8 @@ class ResetPasswordView @Inject constructor(
     override lateinit var view: View
 
     override fun getObject(items: ArrayList<String>): ResetPasswordModel {
-        return ResetPasswordModel() //fill with Model Configuration
+        return ResetPasswordModel(
+            password = getEditText(R.id.edit_text_password_resetpassword_screen)
+        ) //fill with Model Configuration
     }
 }

@@ -1,11 +1,12 @@
 package com.example.autonomtest.app_modules.variable_storage
 
 import com.example.autonomtest.app_modules.variable.Variable
+import com.example.autonomtest.app_modules.view_model.ViewModelMaster
 import javax.inject.Inject
 
 class VariableStorageProvider @Inject constructor(): VariableStorage {
 
-    val VariableMap: MutableMap<String, Map<String, Map<String, Variable>>> by lazy {
+    val VariableMap: MutableMap<String, Map<String, Map<String, Variable<ViewModelMaster>>>> by lazy {
         mutableMapOf()
     }
 
@@ -13,7 +14,7 @@ class VariableStorageProvider @Inject constructor(): VariableStorage {
         logic: String,
         screen: String,
         nameField: String,
-        data: Variable
+        data: Variable<ViewModelMaster>
     ) {
         TODO("Map Logic Implementation Needed")
     }

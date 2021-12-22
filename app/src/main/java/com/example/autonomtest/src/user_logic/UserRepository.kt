@@ -21,21 +21,26 @@ class UserRepository @Inject constructor(private val webApi: WebApi) {
             		.subscribeOn(Schedulers.io())
             		.observeOn(AndroidSchedulers.mainThread())
     	}
-	fun onForgetPassword(forgetpasswordModel: ForgetPasswordModel): Observable<BaseResponse> {
-        	return webApi.forgetpassword(forgetpasswordModel)
+	fun onForgetPassword(forgetPasswordModel: ForgetPasswordModel): Observable<BaseResponse> {
+        	return webApi.forgetpassword(forgetPasswordModel)
             		.subscribeOn(Schedulers.io())
             		.observeOn(AndroidSchedulers.mainThread())
     	}
-	fun onVerifyCode(verifycodeModel: VerifyCodeModel): Observable<BaseResponse> {
-        	return webApi.verifycode(verifycodeModel)
+	fun onVerifyCode(verifyCodeModel: VerifyCodeModel): Observable<BaseResponse> {
+        	return webApi.verifyCode(verifyCodeModel)
             		.subscribeOn(Schedulers.io())
             		.observeOn(AndroidSchedulers.mainThread())
     	}
-	fun onResetPassword(resetpasswordModel: ResetPasswordModel): Observable<BaseResponse> {
-        	return webApi.resetpassword(resetpasswordModel)
+	fun onResetPassword(resetPasswordModel: ResetPasswordModel): Observable<BaseResponse> {
+        	return webApi.resetpassword(resetPasswordModel)
             		.subscribeOn(Schedulers.io())
             		.observeOn(AndroidSchedulers.mainThread())
     	}
+	fun onWelcomeScreen(welcomeScreenModel: WelcomeScreenModel): Observable<BaseResponse>{
+		return webApi.welcomescreen(WelcomeScreenModel())
+			.subscribeOn(Schedulers.io())
+			.observeOn(AndroidSchedulers.mainThread())
+	}
 
 	//@EndRepositoryConnections
 }

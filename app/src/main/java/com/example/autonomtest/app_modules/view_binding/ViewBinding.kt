@@ -2,11 +2,12 @@ package com.example.autonomtest.app_modules.view_binding
 
 import android.view.View
 import android.widget.EditText
+import android.widget.TextView
 
 interface  ViewBinding<T>{
     var view: View
-    fun setOnClick(tag: String, executor: () -> Unit) = run {
-        view.findViewWithTag<View>(tag).setOnClickListener{ executor()}
+    fun setOnClick(id: Int, executor: () -> Unit) = run {
+        view.findViewById<View>(id).setOnClickListener{ executor()}
     }
     fun setAdapter(items: Any?, listener: Any) = 0
     fun setAdapter(items: Any?): Int{
@@ -15,6 +16,10 @@ interface  ViewBinding<T>{
     fun getMap(): Map<Int, ArrayList<ArrayList<Float>>> = mapOf()
 
     fun getObject(items: ArrayList<String> = arrayListOf()) : T
+
+    fun setVisibility(Id: Int, value: Int)
+        = view.findViewById<TextView>(Id).setText(value)
+
 
     fun setEditText(tag: String, value:String)
         = view.findViewWithTag<EditText>(tag).setText(value)

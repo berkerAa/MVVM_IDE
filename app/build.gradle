@@ -2,10 +2,12 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-kapt'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+
 }
 
 android {
-    compileSdk 30
+    compileSdk 31
 
     dataBinding {
         enabled true
@@ -14,7 +16,7 @@ android {
     defaultConfig {
         applicationId "com.example.autonomtest"
         minSdk 28
-        targetSdk 30
+        targetSdk 31
         versionCode 1
         versionName "1.0"
 
@@ -34,6 +36,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    kapt {
+        correctErrorTypes true
+    }
+
 }
 
 dependencies {

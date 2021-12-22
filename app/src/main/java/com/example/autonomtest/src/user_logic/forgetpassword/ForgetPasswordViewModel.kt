@@ -1,5 +1,6 @@
 package com.example.autonomtest.src.user_logic.forgetpassword
 
+import com.example.autonomtest.app_modules.storage.Storage
 import com.example.autonomtest.src.user_logic.UserRepository
 import javax.inject.Inject
 import io.reactivex.Observable
@@ -9,7 +10,7 @@ import com.example.autonomtest.app_modules.web_api.response.BaseResponse
 import com.example.autonomtest.src.user_logic.ds.UserScope
 import com.example.autonomtest.src.user_logic.model.*
 
-class ForgetPasswordViewModel @Inject constructor(private val userRepository: UserRepository) {
+class ForgetPasswordViewModel @Inject constructor(private val userRepository: UserRepository,  private val storage: Storage) {
 /**
 * Return Observable API Result status with result data placeholder 
 * The model argument must specify a model description of specified business case.
@@ -26,8 +27,12 @@ fun onForgetPassword(forgetpasswordModel: ForgetPasswordModel): Observable<Forge
                 when(status.status)
                 {
 			  20030 -> ForgetPasswordEmailError(status.data)
-			  20031 -> ForgetPasswordEmailmatcherror(status.data)
-			  10003 -> ForgetPasswordCodeSendSuccess(status.data)
+			  20031 -> ForgetPasswordEmailMatchError(status.data)
+			  10003 -> storage.setString(VERIFY_CODE, status.message).run {
+                  ForgetPasswordCodeSendSuccess(
+                      status.data
+                  )
+              }
 			  30003 -> ForgetPasswordControllerError(status.data)
 			  else -> ForgetPasswordObservableErrorStatus(status.data)
                     
@@ -46,4 +51,8 @@ fun onForgetPassword(forgetpasswordModel: ForgetPasswordModel): Observable<Forge
 * @return      Observable Calculation results status
 */
 	//@StartCustomCalculation
+
+    companion object{
+        const val VERIFY_CODE = "verify_code"
+    }
 }

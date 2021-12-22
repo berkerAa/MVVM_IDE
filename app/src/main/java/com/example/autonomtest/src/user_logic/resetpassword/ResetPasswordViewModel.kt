@@ -17,6 +17,7 @@ class ResetPasswordViewModel @Inject constructor(private val userRepository: Use
 * @param  model data class description of unseriliazed Json Format
 * @return      Observable API results status
 */
+
 fun onResetPassword(resetpasswordModel: ResetPasswordModel): Observable<ResetPasswordStatus>
     {
         return userRepository.onResetPassword(resetpasswordModel)

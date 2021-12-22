@@ -10,8 +10,10 @@ import com.example.autonomtest.src.user_logic.model.*
 import com.example.autonomtest.src.user_logic.login.*
 import com.example.autonomtest.src.user_logic.register.*
 import com.example.autonomtest.src.user_logic.forgetpassword.*
+import com.example.autonomtest.src.user_logic.registerC.RegisterView
 import com.example.autonomtest.src.user_logic.verifycode.*
 import com.example.autonomtest.src.user_logic.resetpassword.*
+import com.example.autonomtest.src.user_logic.welcomescreen.WelcomeScreenView
 import dagger.Module
 //@EndImportLibraries
 @Module
@@ -28,6 +30,8 @@ abstract class ViewBindingModule {
  	abstract fun provideVerifyCodeView(verifycodeView: VerifyCodeView): ViewBinding<VerifyCodeModel>
 	@Binds @UserScope
  	abstract fun provideResetPasswordView(resetpasswordView: ResetPasswordView): ViewBinding<ResetPasswordModel>
+ 	@Binds @UserScope
+	abstract fun provideWelcomeScreenView(welcomeScreenView: WelcomeScreenView): ViewBinding<WelcomeScreenModel>
 
 //@EndViewBinding
 }

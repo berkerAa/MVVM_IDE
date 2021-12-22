@@ -1,6 +1,230 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"></androidx.constraintlayout.widget.ConstraintLayout>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/imageButton_ac_user_change_password__layout"
+        app:backgroundTint="@null"
+        android:layout_width="335dp"
+        android:layout_height="47dp"
+        android:background="@drawable/custom_input"
+        android:backgroundTint="@color/button_color"
+        android:fontFamily="@font/montserratmedium"
+        android:text="@string/button_request_email"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_ac_useR_change_password_code"
+        app:layout_constraintVertical_bias="0.557"
+        app:srcCompat="@drawable/group_1009" />
+
+    <TextView
+        android:id="@+id/tw_ac_us_change_password_layout_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="368dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/tw_ac_us_code_layout_6_hane_text"
+        android:textColor="@color/button_color"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_ac_useR_change_password_code"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_ac_us_change_password_layout_change_password"
+        app:layout_constraintVertical_bias="0.803" />
+
+    <TextView
+        android:id="@+id/textView_ac_us_change_password_layout_change_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratmedium"
+        android:lineSpacingExtra="-3sp"
+        android:text="@string/reset"
+        android:textColor="#002e6d"
+        android:textSize="21sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17" />
+
+    <ImageView
+        android:id="@+id/imageView_ac_useR_change_password_code"
+        android:layout_width="100.7dp"
+        android:layout_height="100.7dp"
+        app:layout_constraintBottom_toTopOf="@+id/tw_ac_us_change_password_layout_button_text"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton_ac_user_change_password__layout"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="@+id/textView_ac_us_change_password_layout_change_password"
+        app:layout_constraintTop_toTopOf="@+id/textView_ac_us_change_password_layout_change_password"
+        app:layout_constraintVertical_bias="0.657"
+        app:srcCompat="@drawable/group_15740" />
+
+    <EditText
+        android:id="@+id/editTextTextCode_input_2"
+        android:layout_width="50dp"
+        android:layout_height="43dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:textColor="@color/button_color"
+
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton_ac_user_change_password__layout"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextCode_input_3"
+        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tw_ac_us_change_password_layout_button_text"
+        app:layout_constraintVertical_bias="0.336" />
+
+    <EditText
+        android:id="@+id/editTextTextCode_input_3"
+        android:layout_width="50dp"
+        android:layout_height="43dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:textColor="@color/button_color"
+
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton_ac_user_change_password__layout"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextCode_input_4"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tw_ac_us_change_password_layout_button_text"
+        app:layout_constraintVertical_bias="0.336" />
+
+    <EditText
+        android:id="@+id/editTextTextCode_input_4"
+        android:layout_width="50dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/button_color"
+
+        app:layout_constraintBottom_toTopOf="@+id/imageButton_ac_user_change_password__layout"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextCode_input_5"
+        app:layout_constraintHorizontal_bias="0.973"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tw_ac_us_change_password_layout_button_text"
+        app:layout_constraintVertical_bias="0.336" />
+
+    <EditText
+        android:id="@+id/editTextTextCode_input_5"
+        android:layout_width="50dp"
+        android:layout_height="43dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/button_color"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton_ac_user_change_password__layout"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextCode_input_6"
+        app:layout_constraintHorizontal_bias="0.942"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tw_ac_us_change_password_layout_button_text"
+        app:layout_constraintVertical_bias="0.336" />
+
+    <EditText
+        android:id="@+id/editTextTextCode_input_6"
+        android:layout_width="50dp"
+        android:layout_height="43dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/button_color"
+        android:hint=""
+        app:layout_constraintBottom_toTopOf="@+id/imageButton_ac_user_change_password__layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tw_ac_us_change_password_layout_button_text"
+        app:layout_constraintVertical_bias="0.336" />
+
+    <EditText
+        android:id="@+id/editTextTextCode_input_1"
+        android:layout_width="50dp"
+        android:layout_height="43dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/button_color"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton_ac_user_change_password__layout"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextCode_input_2"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tw_ac_us_change_password_layout_button_text"
+        app:layout_constraintVertical_bias="0.336" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:lineSpacingExtra="3sp"
+        android:text="@string/tw_ac_us_code_lay_popup_message"
+        android:textColor="#002e6d"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton_ac_user_change_password__layout"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton_ac_user_change_password__layout"
+        app:layout_constraintHorizontal_bias="0.024"
+        app:layout_constraintStart_toStartOf="@+id/imageButton_ac_user_change_password__layout"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextCode_input_1"></TextView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="97dp"
+        android:layout_height="23.4dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_ac_us_change_password_layout_change_password"
+        app:layout_constraintEnd_toEndOf="@+id/textView_ac_us_change_password_layout_change_password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_ac_us_change_password_layout_change_password"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.549"
+        app:srcCompat="@drawable/group_15742" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="4sp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton_ac_user_change_password__layout"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton_ac_user_change_password__layout"
+        app:layout_constraintStart_toStartOf="@+id/imageButton_ac_user_change_password__layout"
+        app:layout_constraintTop_toTopOf="@+id/imageButton_ac_user_change_password__layout"
+        tools:text="@string/tw_ac_us_verification_layout_button_text" />
+
+    <Button
+        android:id="@+id/button_activity_user_code_layout_back_button"
+        android:layout_width="10dp"
+        android:layout_height="23.4dp"
+        android:hint=""
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

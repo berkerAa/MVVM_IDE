@@ -9,6 +9,8 @@ import com.example.autonomtest.src.user_logic.register.RegisterPresenter
 import com.example.autonomtest.src.user_logic.forgetpassword.ForgetPasswordPresenter
 import com.example.autonomtest.src.user_logic.verifycode.VerifyCodePresenter
 import com.example.autonomtest.src.user_logic.resetpassword.ResetPasswordPresenter
+import com.example.autonomtest.src.user_logic.welcomescreen.WelcomeScreenPresenter
+import javax.inject.Inject
 
 //@EndLibraryImport
 
@@ -18,9 +20,10 @@ data class Register(val REGISTER: Class<RegisterPresenter> = RegisterPresenter::
 data class ForgetPassword(val FORGETPASSWORD: Class<ForgetPasswordPresenter> = ForgetPasswordPresenter::class.java): UserNavigationStatus()
 data class VerifyCode(val VERIFYCODE: Class<VerifyCodePresenter> = VerifyCodePresenter::class.java): UserNavigationStatus()
 data class ResetPassword(val RESETPASSWORD: Class<ResetPasswordPresenter> = ResetPasswordPresenter::class.java): UserNavigationStatus()
+data class WelcomeScreen(val WELCOMESCREEN: Class<WelcomeScreenPresenter> = WelcomeScreenPresenter::class.java): UserNavigationStatus()
 
 @UserScope
-class UserRouter: Router<UserNavigationStatus> {
+class UserRouter @Inject constructor(): Router<UserNavigationStatus> {
     override fun navigationLogic(
         activity: AppCompatActivity,
         navigationStatus: UserNavigationStatus,
@@ -45,7 +48,11 @@ class UserRouter: Router<UserNavigationStatus> {
         when(activeScreen)
         {
             is LoginPresenter -> activity.finishAffinity()
-            
+            is ForgetPasswordPresenter -> onFragmentChange(activity, containerViewId, LoginPresenter::class.java)
+            is RegisterPresenter -> onFragmentChange(activity, containerViewId, LoginPresenter::class.java)
+
+
+
         }
     }
 }

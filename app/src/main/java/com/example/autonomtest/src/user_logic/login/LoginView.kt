@@ -16,6 +16,9 @@ class LoginView @Inject constructor(
 
     override fun getObject(items: ArrayList<String>): LoginModel {
         return LoginModel(
+            e_mail = getEditText(R.id.email_loginscreen),
+            password = getEditText(R.id.editTextTextPassword_loginscreen)
+
         ) //fill with Model Configuration
     }
 }

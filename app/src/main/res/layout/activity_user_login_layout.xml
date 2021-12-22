@@ -1,8 +1,250 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/deportak_logo"
+        android:layout_width="161dp"
+        android:layout_height="49dp"
+        android:src="@drawable/icon_depo_ortak_enter"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword_loginscreen"
+        app:layout_constraintEnd_toEndOf="@+id/textView_activity_user_login_layout_login"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="@+id/textView_activity_user_login_layout_login"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.351" />
+
+    <EditText
+        android:id="@+id/email_loginscreen"
+        android:layout_width="335dp"
+        android:layout_height="41dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/custom_input"
+        android:drawableLeft="@drawable/group_15738"
+        android:ems="10"
+        android:foregroundGravity="bottom"
+        android:gravity="fill_vertical"
+        android:hint="@string/textview_email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword_loginscreen"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword_loginscreen"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword_loginscreen"
+        app:layout_constraintTop_toBottomOf="@+id/deportak_logo"
+        app:layout_constraintVertical_bias="0.771" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword_loginscreen"
+        android:layout_width="335dp"
+        android:layout_height="41dp"
+        android:background="@drawable/custom_input"
+        android:drawableLeft="@drawable/group_1032"
+        android:ems="10"
+        android:hint="@string/textview_password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_remember_me"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox_remember_me"
+        android:layout_width="161dp"
+        android:layout_height="18dp"
+        android:fontFamily="@font/montserratmedium"
+        android:text="@string/checkbox_remember_me"
+        android:textColor="@color/button_color"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton_Activity_user_login_layout_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword_loginscreen"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <ImageButton
+        android:id="@+id/imageButton_Activity_user_login_layout_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword_loginscreen"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword_loginscreen"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.796"
+        app:srcCompat="@drawable/group_1009" />
+
+    <Button
+        android:id="@+id/button_forgot_password_activity_user_login_layout"
+        android:layout_width="125dp"
+        android:layout_height="20dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton_Activity_user_login_layout_login"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="@+id/imageButton_Activity_user_login_layout_login"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_Activity_user_login_layout_login"
+        app:layout_constraintVertical_bias="0.188" />
+
+    <TextView
+        android:layout_width="125dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/montserrat"
+        android:lineSpacingExtra="11sp"
+        android:tag="forgot_password"
+        android:text="@string/textview_forgot_password"
+        android:textAllCaps="false"
+        android:textColor="@color/button_color"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/button_forgot_password_activity_user_login_layout"
+        app:layout_constraintEnd_toEndOf="@+id/button_forgot_password_activity_user_login_layout"
+        app:layout_constraintStart_toStartOf="@+id/button_forgot_password_activity_user_login_layout"
+        app:layout_constraintTop_toTopOf="@+id/button_forgot_password_activity_user_login_layout" />
+
+    <TextView
+        android:id="@+id/textView_activity_user_login_layout_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratmedium"
+        android:lineSpacingExtra="-3sp"
+        android:text="@string/button_giris_yap"
+        android:textColor="#002e6d"
+        android:textSize="21sp"
+        android:textStyle="normal"
+
+        app:layout_constraintBottom_toTopOf="@+id/email_loginscreen"
+        app:layout_constraintEnd_toEndOf="@+id/email_loginscreen"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/email_loginscreen"
+        app:layout_constraintTop_toBottomOf="@+id/deportak_logo"
+        app:layout_constraintVertical_bias="0.443" />
+
+    <TextView
+        android:id="@+id/textView_activity_user_login_layout_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/button_giris_yap"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton_Activity_user_login_layout_login"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton_Activity_user_login_layout_login"
+        app:layout_constraintStart_toStartOf="@+id/imageButton_Activity_user_login_layout_login"
+        app:layout_constraintTop_toTopOf="@+id/imageButton_Activity_user_login_layout_login" />
+
+    <Button
+        android:id="@+id/button_activity_user_login_layout_create_an_Account"
+        android:layout_width="120dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/tw_ac_user_login_layout_create_account_2"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton_Activity_user_login_layout_login"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tw_ac_user_login_layout_create_account_2"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_Activity_user_login_layout_login"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="11sp"
+        android:text="@string/tw_ac_user_login_create_an_account"
+        android:textAllCaps="false"
+        android:textColor="#002e6d"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/button_activity_user_login_layout_create_an_Account"
+        app:layout_constraintEnd_toEndOf="@+id/button_activity_user_login_layout_create_an_Account"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button_activity_user_login_layout_create_an_Account"
+        app:layout_constraintTop_toTopOf="@+id/button_activity_user_login_layout_create_an_Account"
+        app:layout_constraintVertical_bias="0.0"></TextView>
+
+    <TextView
+        android:id="@+id/tw_ac_user_login_layout_create_account_2"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="11sp"
+        android:text="@string/tw_ac_user_login_create_an_account_2"
+        android:textColor="#002e6d"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button_forgot_password_activity_user_login_layout"
+        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintStart_toStartOf="@+id/imageButton_Activity_user_login_layout_login"
+        app:layout_constraintTop_toBottomOf="@+id/button_forgot_password_activity_user_login_layout"
+        app:layout_constraintVertical_bias="0.76" />
+
+    <ImageButton
+        android:id="@+id/imageButton_password"
+        android:layout_width="19.6dp"
+        android:layout_height="19.6dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPassword_loginscreen"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword_loginscreen"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword_loginscreen"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPassword_loginscreen"
+        app:srcCompat="@drawable/password_custom_button" />
+
+    <TextView
+        android:tag="wrong_mail"
+        android:id="@+id/textView_ac_user_login_popupmessage_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:textStyle="italic"
+        android:textSize="12sp"
+        android:textColor="#002e6d"
+        android:lineSpacingExtra="3sp"
+        android:text="@string/tw_ac_user_logim_wrong_popup_message"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword_loginscreen"
+        app:layout_constraintEnd_toEndOf="@+id/email_loginscreen"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/email_loginscreen"
+        app:layout_constraintTop_toBottomOf="@+id/email_loginscreen"
+        app:layout_constraintVertical_bias="0.421" />
+
+    <TextView
+        android:id="@+id/textView_ac_user_login_verification_popupmessage_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:lineSpacingExtra="3sp"
+        android:text="@string/tw_ac_user_login_layout_butun_alanlari_doldurunuz"
+        android:textColor="#002e6d"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton_Activity_user_login_layout_login"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox_remember_me"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_remember_me"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_remember_me"
+        app:layout_constraintVertical_bias="0.476" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
